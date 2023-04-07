@@ -1,6 +1,5 @@
 package org.example;
 
-import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentityprovider.CognitoIdentityProviderClient;
 import software.amazon.awssdk.services.cognitoidentityprovider.model.ListUserPoolsRequest;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -8,11 +7,9 @@ import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 public class Main {
 
     public static CognitoIdentityProviderClient cognito = CognitoIdentityProviderClient.builder()
-            .region(Region.EU_WEST_1)
             .build();
 
     private static final DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
-            .region(Region.EU_WEST_1)
             .build();
 
     public static void main(String[] args) throws InterruptedException {
