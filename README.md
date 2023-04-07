@@ -58,3 +58,6 @@ Query execution time (ms): 109
 Query execution time (ms): 109
 
 ```
+
+See the blog post about it
+https://medium.com/@ugolnikovroman/aws-services-performance-c08685e88b69
